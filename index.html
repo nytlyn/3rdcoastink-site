@@ -1,0 +1,396 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>3rd Coast Ink</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://cdn.lightwidget.com">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+background:#0a0a0a;
+color:#e6d7a6;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(#070707,#050505);
+padding:110px 20px 80px;
+text-align:center;
+border-bottom:1px solid #222;
+box-shadow:inset 0 -25px 50px rgba(0,0,0,.7);
+}
+
+.logo{
+width:1000px;
+max-width:95%;
+height:auto;
+
+filter:
+drop-shadow(0 4px 8px rgba(0,0,0,.7))
+drop-shadow(0 0 12px rgba(212,175,55,.25))
+drop-shadow(0 0 35px rgba(212,175,55,.18));
+}
+
+/* NAV */
+
+nav{
+position:sticky;
+top:0;
+background:#0f0f0f;
+padding:16px;
+text-align:center;
+border-bottom:2px solid #d4af37;
+z-index:999;
+}
+
+nav a{
+color:#d4af37;
+margin:0 24px;
+text-decoration:none;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+nav a:hover{
+color:#ffd86b;
+}
+
+/* HERO */
+
+.hero{
+height:55vh;
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url(hero.jpg) center 78%/cover no-repeat;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+border-bottom:3px solid #d4af37;
+}
+
+.hero h2{
+font-size:38px;
+letter-spacing:4px;
+margin:0;
+}
+
+.hero p{
+margin-top:12px;
+font-size:18px;
+letter-spacing:3px;
+color:#d4af37;
+}
+
+.hero-btn{
+margin-top:28px;
+padding:14px 32px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:.25s;
+}
+
+.hero-btn:hover{
+background:#ffd86b;
+}
+
+/* SECTIONS */
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+text-align:center;
+color:#d4af37;
+letter-spacing:4px;
+}
+
+.divider{
+width:120px;
+height:2px;
+background:linear-gradient(90deg,transparent,#d4af37,transparent);
+margin:30px auto;
+}
+
+/* ARTISTS */
+
+.artists{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.artist{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #1f1f1f;
+text-align:center;
+transition:.25s;
+}
+
+.artist:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,.8);
+}
+
+.artist img{
+width:120px;
+height:120px;
+border-radius:50%;
+border:3px solid #d4af37;
+object-fit:cover;
+margin-bottom:15px;
+
+box-shadow:0 0 12px rgba(212,175,55,.35);
+}
+
+.book-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:.25s;
+}
+
+.book-btn:hover{
+background:#ffd86b;
+}
+
+/* INSTAGRAM */
+
+.instagram-feed{
+max-width:1000px;
+margin:auto;
+margin-top:40px;
+}
+
+/* ABOUT */
+
+.about-text{
+max-width:760px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:17px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+line-height:2;
+}
+
+.contact a{
+color:#ffd86b;
+}
+
+/* FOOTER */
+
+footer{
+background:#050505;
+text-align:center;
+padding:30px;
+color:#a48d4a;
+border-top:1px solid #1f1f1f;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" class="logo" alt="3rd Coast Ink">
+
+</header>
+
+<nav>
+
+<a href="#artists">ARTISTS</a>
+<a href="#instagram">WORK</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+
+</nav>
+
+<div class="hero">
+
+<h2>CUSTOM TATTOO • NAILS • LASHES</h2>
+<p>BOISE, IDAHO</p>
+
+<a class="hero-btn"
+href="https://www.instagram.com/3rdcoastink__208"
+target="_blank">
+BOOK NOW
+</a>
+
+</div>
+
+<section id="artists">
+
+<h2>ARTISTS</h2>
+<div class="divider"></div>
+
+<div class="artists">
+
+<div class="artist">
+<img src="raiden.jpg">
+<h3>Radien Garza</h3>
+<p>Shop Owner • Head Tattoo Artist</p>
+<a class="book-btn" href="https://www.instagram.com/raiden_3rdcoastink" target="_blank">
+Book via Instagram
+</a>
+</div>
+
+<div class="artist">
+<img src="boo.jpg">
+<h3>Boo</h3>
+<p>Lead Artist • Multi Style</p>
+<a class="book-btn" href="https://www.instagram.com/nigh.hill.tattoos" target="_blank">
+Book via Instagram
+</a>
+</div>
+
+<div class="artist">
+<img src="hayat.jpg">
+<h3>Hayat</h3>
+<p>Certified Nail Tech & Lash Artist</p>
+<a class="book-btn" href="https://www.instagram.com/nailart_by_hayat" target="_blank">
+Book via Instagram
+</a>
+</div>
+
+<div class="artist">
+<img src="loui.jpg">
+<h3>Loui</h3>
+<p>Tattoo Apprentice</p>
+<a class="book-btn" href="https://www.instagram.com/loui_lays_ink" target="_blank">
+View Work
+</a>
+</div>
+
+<div class="artist">
+<img src="ashleigh.jpg">
+<h3>Ashleigh</h3>
+<p>Tattoo Apprentice</p>
+<a class="book-btn" href="https://www.instagram.com/igitzashleigh" target="_blank">
+View Work
+</a>
+</div>
+
+<div class="artist">
+<img src="mackenzie.jpg">
+<h3>Mackenzie</h3>
+<p>Tattoo Apprentice</p>
+<a class="book-btn" href="https://www.instagram.com/megalodoninks.222" target="_blank">
+View Work
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="instagram">
+
+<h2>RECENT WORK</h2>
+<div class="divider"></div>
+
+<div class="instagram-feed">
+
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+
+<iframe
+src="https://cdn.lightwidget.com/widgets/e0ebc7879e055c7297614a1e7821f1cb.html"
+scrolling="no"
+allowtransparency="true"
+class="lightwidget-widget"
+style="width:100%;border:0;overflow:hidden;">
+</iframe>
+
+</div>
+
+<p style="text-align:center;margin-top:40px;">
+<a class="hero-btn"
+href="https://www.instagram.com/3rdcoastink__208"
+target="_blank">
+VIEW MORE ON INSTAGRAM
+</a>
+</p>
+
+</section>
+
+<section id="about">
+
+<h2>ABOUT</h2>
+<div class="divider"></div>
+
+<p class="about-text">
+3rd Coast Ink is a locally owned tattoo studio in Boise dedicated to high quality custom tattoo work and professional service. Our artists specialize in a wide range of styles and work closely with every client to create unique pieces that are built to last. Whether you're coming in for your first tattoo or adding to an existing collection, our goal is to provide a comfortable, welcoming environment where creativity and craftsmanship come first.
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>CONTACT</h2>
+<div class="divider"></div>
+
+<div class="contact">
+
+<p>📍 6224 W Overland Rd, Boise, ID 83709</p>
+
+<p>📞 <a href="tel:2085009643">(208) 500-9643</a></p>
+
+<p>
+Instagram:
+<a href="https://www.instagram.com/3rdcoastink__208">
+@3rdcoastink__208
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 3rd Coast Ink
+</footer>
+
+</body>
+</html>
+```
+
+
