@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 
@@ -38,6 +39,7 @@ box-shadow:inset 0 -25px 50px rgba(0,0,0,.7);
 width:1000px;
 max-width:95%;
 height:auto;
+
 filter:
 drop-shadow(0 4px 8px rgba(0,0,0,.7))
 drop-shadow(0 0 12px rgba(212,175,55,.25))
@@ -51,17 +53,20 @@ position:sticky;
 top:0;
 background:#0f0f0f;
 padding:16px;
-text-align:center;
 border-bottom:2px solid #d4af37;
 z-index:999;
+
+display:flex;
+justify-content:center;
+gap:30px;
 }
 
 nav a{
 color:#d4af37;
-margin:0 24px;
 text-decoration:none;
 font-weight:bold;
 letter-spacing:2px;
+font-size:14px;
 }
 
 nav a:hover{
@@ -72,6 +77,7 @@ color:#ffd86b;
 
 .hero{
 height:55vh;
+
 background:
 linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
 url(hero.jpg) center 78%/cover no-repeat;
@@ -163,6 +169,7 @@ border-radius:50%;
 border:3px solid #d4af37;
 object-fit:cover;
 margin-bottom:15px;
+
 box-shadow:0 0 12px rgba(212,175,55,.35);
 }
 
@@ -221,7 +228,7 @@ color:#a48d4a;
 border-top:1px solid #1f1f1f;
 }
 
-/* MOBILE FIXES */
+/* MOBILE */
 
 @media (max-width:768px){
 
@@ -230,13 +237,25 @@ padding:70px 20px 50px;
 }
 
 .logo{
-width:90%;
+width:92%;
+}
+
+/* NAV GRID */
+
+nav{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+text-align:center;
+gap:10px;
+padding:14px 10px;
 }
 
 nav a{
-margin:0 12px;
-font-size:14px;
+font-size:13px;
+letter-spacing:1px;
 }
+
+/* HERO */
 
 .hero{
 height:45vh;
@@ -251,8 +270,15 @@ letter-spacing:2px;
 font-size:14px;
 }
 
+/* SECTIONS */
+
 section{
 padding:60px 20px;
+}
+
+.about-text{
+font-size:16px;
+line-height:1.6;
 }
 
 .artists{
@@ -263,11 +289,6 @@ gap:20px;
 padding:20px;
 }
 
-.about-text{
-font-size:16px;
-line-height:1.6;
-}
-
 .instagram-feed{
 margin-top:25px;
 }
@@ -275,6 +296,7 @@ margin-top:25px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -298,8 +320,7 @@ margin-top:25px;
 <a class="hero-btn"
 href="https://www.instagram.com/3rdcoastink__208"
 target="_blank">
-BOOK NOW
-</a>
+BOOK NOW </a>
 
 </div>
 
